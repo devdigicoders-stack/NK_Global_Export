@@ -7,6 +7,7 @@ import ProductsBg from '../images/Fishimg.jpeg'
 import ProductsCom1 from '../Components/ProductsCom1';
 import ProductsCom2 from '../Components/ProductsCom2';
 import ProductsImg from '../images/P1.png'
+import ProductsImg4 from '../images/P6.png'
 import ProductsImg1 from '../images/P2.png'
 import ProductsImg2 from '../images/P4.png'
 import ProductsImg3 from '../images/P5.png'
@@ -50,11 +51,36 @@ const Products = () => {
     ];
 
     const productsData = [
-        { type: 1, image: ProductsImg, heading: "Ettemad Agro Products – Fresh, Premium & Natural Choices", text: "Ettemad Agro Products bring you a powerful range of natural, farm-fresh essentials designed to support a healthy lifestyle. Our commitment to purity ensures every product is sourced responsibly and processed with utmost care. Whether you're choosing daily staples, cooking essentials, or wellness items, EtteMad Agro Products deliver unmatched quality and freshness." },
-        { type: 2, image: ProductsImg1, heading: "Poultry", text: "At Ettemad Agro, we take pride in providing the finest selection of premium poultry products to businesses across India. As a trusted fresh poultry supplier India and wholesale chicken distributor, our poultry category is designed to meet the diverse culinary needs of restaurants, hotels, cloud kitchens, retailers, and caterers. We offer a wide range of fresh, chilled, and frozen poultry, including: Chicken Curry Cut, Chicken Breast Boneless, Chicken Leg, Drumsticks & Wings, Chicken Mince (Keema), Whole Chicken, Customised Chicken Cuts for B2B. At Ettemad Agro, freshness and hygiene are our top priorities. Every chicken piece undergoes strict quality checks to ensure: 100% halal-certified processing, clean, safe, and hygienic handling, temperature-controlled storage & delivery, consistent weight, size, and quality. As one of the best wholesale poultry suppliers in India, we ensure smooth and reliable B2B supply across major cities including Delhi NCR, Noida, Bangalore, Hyderabad, Chennai, Punjab, and Kerala. Whether you need fresh chicken supplier India, frozen chicken supplier India, or bulk poultry supply for your commercial kitchen — Ettemad Agro guarantees quality, reliability, and timely delivery every time." },
-        { type: 1, image: ProductsImg1, heading: "Mutton", text: "At Ettemad Agro, we source the finest cuts of premium lamb and goat meat to deliver tender, flavourful, and succulent mutton products to our B2B clients across India. As a trusted mutton supplier India, we ensure that every piece meets the highest standards of freshness, hygiene, and authenticity. Our mutton range includes: Mutton Curry Cut, Mutton Keema, Mutton Chops & Ribs, Mutton Boneless, Customised Mutton Cuts for Restaurants & Cloud Kitchens. Each product is carefully selected and processed to maintain optimal taste, texture, and nutritional value. All mutton supplied by Ettemad Agro is: 100% halal-certified, sourced from healthy livestock, cleaned and processed under strict hygiene practices, delivered through temperature-controlled logistics for maximum freshness. As one of the most reliable wholesale mutton suppliers in India, we cater to businesses across North India and South India, including Delhi NCR, Noida, Punjab, Bangalore, Hyderabad, Chennai, and Kerala." },
-        { type: 2, image: ProductsImg2, heading: "Seafood", text: "Ettemad Agro provides a diverse range of fish, prawns, shrimps, shellfish, and customised seafood portions, sourced directly from trusted coastal suppliers. Each product undergoes rigorous cleaning and quality checks to ensure natural freshness and authentic flavor. Through cold-chain logistics, we maintain peak quality from shore to kitchen. As a reliable seafood wholesale supplier India, we cater to hotels, cloud kitchens, and restaurants across Delhi NCR, Bangalore, Hyderabad, Chennai, Punjab, and Kerala." },
-        { type: 1, image: ProductsImg3, heading: "Eggs", text: "Our egg collection includes fresh white eggs, brown eggs, and farm-fresh bulk supplies sourced from ethical poultry farms that prioritize hen welfare and hygiene. Each egg is cleaned, graded, and quality-checked to ensure strong shells, freshness, and nutritional value. As a leading bulk egg supplier India, we deliver to bakeries, restaurants, hotels, and cloud kitchens across North and South India, ensuring safe packaging and timely delivery." }
+        {
+            type: 1,
+            image: ProductsImg,
+            heading: "Ettemad Agro Products – Fresh, Premium & Natural Choices",
+            text: "Ettemad Agro Products bring you a powerful range of natural, farm-fresh essentials designed to support a healthy lifestyle. Our commitment to purity ensures every product is sourced responsibly and processed with utmost care. Whether EtteMad Agro Products deliver unmatched quality and freshness."
+        },
+        {
+            type: 2,
+            image: ProductsImg1,
+            heading: "Poultry",
+            text: "At Ettemad Agro, we take pride in providing the finest selection of premium poultry products to businesses across India. As a trusted fresh poultry supplier India and wholesale chicken distributor, our poultry category is designed to meet the diverse culinary needs of restaurants, hotels, cloud kitchens, retailers, and caterers. We offer a wide range of fresh, chilled, and frozen poultry, including: Chicken Curry Cut, Chicken Breast Boneless, Chicken Leg, Drumsticks & Wings, Chicken Mince (Keema), Whole Chicken, Customised Chicken Cuts for B2B. At Ettemad Agro, freshness and hygiene are our top priorities. Every chicken piece undergoes strict quality checks we ensure smooth and reliable B2B supply across major cities including Delhi NCR, Noida, Bangalore, Hyderabad, Chennai, Punjab, and Kerala. Whether you need fresh chicken supplier India, frozen chicken supplier India, or bulk poultry supply for your commercial kitchen."
+        },
+        {
+            type: 1,
+            image: ProductsImg4,
+            heading: "Mutton",
+            text: "At Ettemad Agro, we source the finest cuts of premium lamb and goat meat to deliver tender, flavourful, and succulent mutton products to our B2B clients across India. As a trusted mutton supplier India, we ensure that every piece meets the highest standards of freshness, hygiene, and authenticity. Our mutton range includes: Mutton Curry Cut, Mutton Keema, Mutton Chops & Ribs, Mutton Boneless, Customised Mutton Cuts for Restaurants & Cloud Kitchens. Each product is carefully selected and processed to maintain optimal taste, texture, and nutritional value. All mutton supplied by Ettemad Agro is: 100% halal-certified, sourced from healthy livestock, cleaned and processed under strict hygiene practices, delivered through temperature-controlled logistics for maximum freshness. As one of the most reliable wholesale mutton India."
+        },
+        {
+            type: 2,
+            image: ProductsImg2,
+            heading: "Seafood",
+            text: "Ettemad Agro provides a diverse range of fish, prawns, shrimps, shellfish, and customised seafood portions,checks to ensure natural freshness and authentic flavor. we maintain peak quality from shore to kitchen. As a reliable seafood wholesale supplier India, we cater to hotels, cloud kitchens, and restaurants across Delhi NCR, Bangalore, Hyderabad, Chennai, Punjab, and Kerala."
+        },
+        {
+            type: 1,
+            image: ProductsImg3,
+            heading: "Chicken & Mutton for Bulk Supply",
+            text: "Our chicken and mutton are sourced Each product is carefully processed, graded, and quality-checked to maintain freshness, texture, and nutritional value. As a trusted bulk chicken and mutton supplier in India, we deliver quality products to restaurants, hotels, caterers, food businesses, and cloud kitchens."
+        }
     ];
 
     const [showAll, setShowAll] = useState(false);

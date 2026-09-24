@@ -136,7 +136,7 @@ const Contact = () => {
                         </div>
 
                         {/* CONTACT INFO */}
-                        <div className="bg-[var(--red-primary)] text-white rounded-[25px] p-5 sm:p-7 lg:p-8 h-full flex flex-col">
+                        <div className="bg-[var(--bg-primary)] text-white rounded-[25px] p-5 sm:p-7 lg:p-8 h-full flex flex-col">
 
                             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3">
                                 Let's Talk

@@ -52,25 +52,56 @@ const Clinets = () => {
             </div>
 
 
-            <div className="w-full px-4 sm:px-6 lg:px-10 py-10 sm:py-12 lg:py-14">
-                <div className="w-full max-w-[1000px] mx-auto text-center">
-                    <h2 className="text-1xl sm:text-2xl md:text-3xl font-semibold leading-tight mb-5 sm:mb-6">
-                        Leading B2B meat supplier for Global & Local Industries
-                    </h2>
+            <div className="w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+                <div className="w-full max-w-[1050px] mx-auto">
 
-                    <p className="text-sm sm:text-base md:text-[15px] leading-6 sm:leading-7">
-                        <strong>Ettemad Agro</strong> is a <strong>Leading B2B meat supplier</strong> for Global & Local Industries, dedicated to bridging the gap between farm-fresh quality and large-scale industrial requirements. We specialize in providing a consistent, <strong className="text-[var(--red-primary)] underline">halal-certified</strong>, and highly regulated supply of poultry, mutton, seafood, and eggs. As a trusted <strong>B2B meat supplier in India</strong>, we understand that procurement managers and business owners require more than just a vendor—they require a strategic partner who ensures food safety, timely logistics, and premium grading.
-                    </p>
+                    {/* Main Content */}
+                    <div className="text-center">
+                        <span className="inline-block text-[var(--red-primary)] text-xs sm:text-sm font-semibold uppercase tracking-[2px] mb-3">
+                            Nk Global  Export
+                        </span>
 
-                    <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold leading-tight mt-12 sm:mt-14 lg:mt-16">
-                        Industries We Serve
-                    </h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-5 sm:mb-6">
+                            Leading B2B Meat Supplier for
+                            <span className="text-[var(--red-primary)]"> Global & Local Industries</span>
+                        </h2>
+
+                        <p className="text-sm sm:text-base md:text-[16px] text-gray-600 leading-7 sm:leading-8 max-w-[950px] mx-auto">
+                            <strong className="text-gray-900">Nk Global Export</strong> is a{" "}
+                            <strong className="text-gray-900">Leading B2B meat supplier</strong>{" "}
+                            for Global & Local Industries, dedicated to bridging the gap between
+                            farm-fresh quality and large-scale industrial requirements. We
+                            specialize in providing a consistent,{" "}
+                            <strong className="text-[var(--red-primary)] underline underline-offset-4">
+                                halal-certified
+                            </strong>
+                            , and highly regulated supply of poultry, mutton, seafood.
+                            As a trusted{" "}
+                            <strong className="text-gray-900">
+                                B2B meat supplier in India
+                            </strong>
+                            , we understand that procurement managers and business owners require
+                            more than just a vendor—they require a strategic partner who ensures
+                            food safety, timely logistics, and premium grading.
+                        </p>
+                    </div>
+
+                    {/* Industries Heading */}
+                    <div className="flex items-center gap-4 mt-14 sm:mt-16 lg:mt-20">
+                        <div className="h-[1px] flex-1 bg-gray-200"></div>
+
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center whitespace-nowrap">
+                            Industries We Serve
+                        </h2>
+
+                        <div className="h-[1px] flex-1 bg-gray-200"></div>
+                    </div>
+
                 </div>
             </div>
-
             {clientsData.map((item, index) => item.type === 1 ?
-            <ClinentsCard1 key={index} Clinentsimage={item.image} Heading={item.heading} Text={item.text} /> :
-            <ClinentsCard2 key={index} clientsimage={item.image} Heading={item.heading} text={item.text} />)}
+                <ClinentsCard1 key={index} Clinentsimage={item.image} Heading={item.heading} Text={item.text} /> :
+                <ClinentsCard2 key={index} clientsimage={item.image} Heading={item.heading} text={item.text} />)}
             <FooterTop />
             <Footer />
         </>

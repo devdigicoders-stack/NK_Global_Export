@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Headerlogo from '../images/header-logo.jpeg'
+import Headerlogo from '../images/Header-logo.png'
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
