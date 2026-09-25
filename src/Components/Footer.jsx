@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { FaPhone, FaEnvelope, FaLocationDot, FaLinkedinIn, FaInstagram, FaFacebookF, FaArrowRight, FaLeaf, } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import Footer1 from '../images/Footer1.png'
@@ -26,7 +27,7 @@ const Footer = () => {
                         </h2>
 
                         <p className="text-gray-500 text-xs sm:text-sm mt-2">
-                            Connect with Nk Global Export for bulk and business enquiries.
+                            Connect with NK GLOBAL EXPORT SOURCING LLP for bulk and business enquiries.
                         </p>
                     </div>
 
@@ -58,7 +59,7 @@ const Footer = () => {
                         </div>
 
                         <p className="text-white/75 text-[12px] sm:text-[13px] lg:text-sm leading-6 sm:leading-7 max-w-[360px]">
-                            Nk Global Export is a trusted meat supply company specializing
+                            NK GLOBAL EXPORT SOURCING LLP is a trusted meat supply company specializing
                             in poultry, mutton, seafood. We focus on quality.
                         </p>
 
@@ -100,11 +101,11 @@ const Footer = () => {
                         <ul className="space-y-2.5 sm:space-y-3 text-[11px] sm:text-[13px] lg:text-sm text-white/70">
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                About Us
+                                <NavLink to="/about">About Us</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Products
+                                <NavLink to='/products'>Products</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
@@ -112,7 +113,7 @@ const Footer = () => {
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Our Business
+                                <NavLink to="/clients">Our Business</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
@@ -134,23 +135,19 @@ const Footer = () => {
                         <ul className="space-y-2.5 sm:space-y-3 text-[11px] sm:text-[13px] lg:text-sm text-white/70">
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Contact Us
+                                <NavLink to="#">Clients</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                FAQ
+                                <NavLink to="#">Privacy Policy</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Careers
+                                <NavLink to="#">Terms & Conditions</NavLink>
                             </li>
 
                             <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Gallery
-                            </li>
-
-                            <li className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer">
-                                Clients
+                                <NavLink to="/contact">Contact Us</NavLink>
                             </li>
 
                         </ul>
@@ -220,9 +217,9 @@ const Footer = () => {
                                     </p>
 
                                     <p className="text-[11px] sm:text-[13px] lg:text-sm leading-5 sm:leading-6 text-white/80">
-                                        417 ITO, IP Estate,
+                                        Lucknow Uttar Pradesh
                                         <br />
-                                        New Delhi - 110002
+                                        India
                                     </p>
                                 </div>
 
@@ -243,25 +240,22 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 text-[10px] sm:text-xs text-white/60">
 
                     <p className="text-center md:text-left">
-                        © 2026 Nk Global Export. All Rights Reserved.
+                        © 2026 NK GLOBAL EXPORT SOURCING LLP. All Rights Reserved.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-x-4 sm:gap-x-5 gap-y-2">
 
-                        <span className="cursor-pointer hover:text-white transition">
-                            Terms & Conditions
-                        </span>
 
-                        <span className="cursor-pointer hover:text-white transition">
-                            Privacy Policy
-                        </span>
-
-                        <span className="cursor-pointer hover:text-white transition">
-                            Shipping Policy
-                        </span>
-
-                        <span className="cursor-pointer hover:text-white transition">
-                            Refund & Return
+                        <span>
+                            Design and Developed By -{" "}
+                            <a
+                                href="https://digicoders.in/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white hover:underline transition"
+                            >
+                                Team DigiCoders
+                            </a>
                         </span>
 
                     </div>

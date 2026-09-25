@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,40 +15,36 @@ import ProductsImg3 from '../images/P5.png'
 import FooterTop from '../Components/FooterTop'
 import Footer from '../Components/Footer'
 import ProductsTop from '../Components/ProductsTop';
-import ProductsChiken from '../images/ProductsChiken.avif'
-import ProductsMutton from '../images/Pmutton.avif'
-import ProductsColdcuds from '../images/Pcoldcuds.avif'
-import Productscombo from '../images/Pcombo.avif'
-import Productspfish from '../images/Pfish.avif'
-import Productsparty from '../images/Pparty.avif'
-import Productscook from '../images/PCook.avif'
-import ProductsLicio from '../images/Plicious.avif'
-import ProductsMasala from '../images/Pmasala.avif'
-import ProductsBurger from '../images/Pburgur.avif'
-import ProductsMomo from '../images/Pmomo.avif'
-import ProductsBeastSeller from '../images/PbestSeller.avif'
+import Apple from '../images/Apple.jpg'
+import Orange from '../images/Orange.png'
+import Grapes from '../images/Grapes.jpg'
+import Potato from '../images/Potato.jpg'
+import Tomato from '../images/Tomato.jpg'
+import Carrot from '../images/Carrot.jpg'
+import Rice from '../images/Rice1.jpg'
+import Wheat from '../images/Wheat.jpg'
+import Sugar from '../images/Sugar.avif'
+import Salt from '../images/Salt.jpg'
+import Lentils from '../images/Lentils.jpg'
+import FLour from '../images/Flor.jpg'
 
 const Products = () => {
 
     const ProductsTopData = [
-        { products: ProductsChiken, Name: "Chiken", },
-        { products: ProductsMutton, Name: "Mutton", },
-        { products: ProductsColdcuds, Name: "Cold Cuts", },
-        { products: Productscombo, Name: "Combos", },
-        { products: Productspfish, Name: "Fish & Seafood", },
-        { products: Productsparty, Name: "Party Starters", },
-        { products: Productscook, Name: "Ready to cook", },
-        { products: ProductsLicio, Name: "Licious", },
-        { products: ProductsMasala, Name: "Curries", },
-        { products: ProductsBurger, Name: "Wings", },
-        { products: ProductsMomo, Name: "Momos", },
-        { products: ProductsBeastSeller, Name: "Bestsellers", },
-        { products: ProductsChiken, Name: "Chiken", },
-        { products: ProductsMutton, Name: "Mutton", },
-        { products: ProductsColdcuds, Name: "Cold Cuts", },
-        { products: Productscombo, Name: "Combos", },
-        { products: Productspfish, Name: "Fish & Seafood", },
-        { products: Productsparty, Name: "Party Starters", },
+        { products: Apple, Name: "Apple", },
+        { products: Orange, Name: "Orange", },
+        { products: Grapes, Name: "Grapes", },
+        { products: Potato, Name: "Potato", },
+        { products: Tomato, Name: "Tomato", },
+        { products: Carrot, Name: "Carrot", },
+    ];
+    const ProductsTopData1 = [
+        { products: Rice, Name: "Rice", },
+        { products: Wheat, Name: "Wheat", },
+        { products: Sugar, Name: "Sugar", },
+        { products: Salt, Name: "Salt", },
+        { products: Lentils, Name: "Lentils", },
+        { products: FLour, Name: "Flour", },
     ];
 
     const productsData = [
@@ -91,53 +88,135 @@ const Products = () => {
 
     return (
         <>
-            <Header />
+            <div className="w-full max-w-full overflow-x-hidden">
 
-            <div className="relative w-full h-[200px] overflow-hidden mt-20">
+                <Header />
 
-                {/* Background Image */}
-                <img
-                    src={ProductsBg}
-                    alt="About Us"
-                    className="absolute inset-0 w-full h-full object-cover"
-                />
+                {/* Hero Section */}
+                <div className="relative w-full h-[170px] sm:h-[200px] overflow-hidden mt-16 sm:mt-20">
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/70"></div>
+                    {/* Background Image */}
+                    <img
+                        src={ProductsBg}
+                        alt="Products"
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
 
-                {/* About Us */}
-                <div className="relative z-10 h-full flex items-center justify-center">
-                    <h1 className="text-white text-3xl sm:text-4xl font-bold">
-                        Products
-                    </h1>
-                </div>
-            </div>
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/70"></div>
 
-            <div className='h-auto w-[82%] mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mt-10 mb-5'>
-                {ProductsTopData.map((item, index) => (
-                    <div key={index} className={`${!showAll && index >= 6 ? 'hidden sm:block' : 'block'}`}>
-                        <ProductsTop products={item.products} Name={item.Name} />
+                    {/* Heading */}
+                    <div className="relative z-10 w-full h-full flex items-center justify-center px-4">
+                        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-center">
+                            Products
+                        </h1>
                     </div>
-                ))}
+
+                </div>
+
+
+                {/* Top Products */}
+
+                <div className="w-full px-4 sm:px-6 md:px-8 lg:w-[90%] xl:w-[82%] lg:px-0 mx-auto mt-10 sm:mt-12 mb-8">
+
+                    <div className="flex items-end justify-between gap-4 mb-6 sm:mb-8">
+
+                        <div className="flex items-start gap-3">
+                            <div className="w-1 h-6 sm:h-8 bg-[var(--red-primary)] rounded-full"></div>
+
+                            <div>
+                                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[var(--heading)] leading-tight">Fruits & Vegetables</h2>
+                            </div>
+                        </div>
+
+                        <NavLink to="/fruitsvegetables" className="group shrink-0 inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg border border-[var(--red-primary)] text-[var(--red-primary)] text-xs sm:text-sm font-semibold hover:bg-[var(--red-primary)] hover:text-white transition-all duration-300">
+                            <span>View Products</span>
+                            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </NavLink>
+
+                    </div>
+
+                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
+                        {ProductsTopData.map((item, index) => (
+                            <div key={index} className={`${!showAll && index >= 6 ? "hidden sm:block" : "block"}`}>
+                                <ProductsTop products={item.products} Name={item.Name} />
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+
+                <div className="w-full px-4 sm:px-6 md:px-8 lg:w-[90%] xl:w-[82%] lg:px-0 mx-auto mt-10 sm:mt-12 mb-8">
+
+                    <div className="flex items-end justify-between gap-4 mb-6 sm:mb-8">
+
+                        <div className="flex items-start gap-3">
+                            <div className="w-1 h-6 sm:h-8 bg-[var(--red-primary)] rounded-full"></div>
+
+                            <div>
+                                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[var(--heading)] leading-tight">Dry Goods & Groceries</h2>
+                            </div>
+                        </div>
+
+                        <NavLink to="/drygoodsgroceries" className="group shrink-0 inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg border border-[var(--red-primary)] text-[var(--red-primary)] text-xs sm:text-sm font-semibold hover:bg-[var(--red-primary)] hover:text-white transition-all duration-300">
+                            <span>View Products</span>
+                            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </NavLink>
+
+                    </div>
+
+                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
+                        {ProductsTopData1.map((item, index) => (
+                            <div key={index} className={`${!showAll && index >= 6 ? "hidden sm:block" : "block"}`}>
+                                <ProductsTop products={item.products} Name={item.Name} />
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+
+
+                {/* View More Button */}
+                <div className="flex justify-center mb-8 sm:hidden px-4">
+
+                    {!showAll && ProductsTopData.length > 6 && (
+
+                        <button
+                            onClick={() => setShowAll(true)}
+                            className=" bg-[var(--red-primary)] text-white px-5 py-2 rounded-lg text-sm font-medium  hover:scale-105  transition duration-300 "  >
+                            View More
+                        </button>
+
+                    )}
+
+                </div>
+
+
+                {/* Products Sections */}
+                <div className="w-full max-w-full overflow-x-hidden overflow-y-hidden">
+                    {productsData.map((item, index) =>
+                        item.type === 1 ? (
+                            <ProductsCom1
+                                key={index}
+                                ProductsCardImg={item.image}
+                                Heading={item.heading}
+                                Text={item.text}
+                            />
+                        ) : (
+                            <ProductsCom2
+                                key={index}
+                                ProductsCardImg={item.image}
+                                Heading={item.heading}
+                                Text={item.text}
+                            />
+                        )
+                    )}
+                </div>
+                <FooterTop />
+
+                <Footer />
+
             </div>
-
-            <div className='flex justify-center mb-8 sm:hidden'>
-                {!showAll && ProductsTopData.length > 6 && (
-                    <button
-                        onClick={() => setShowAll(true)}
-                        className='bg-[var(--red-primary)] text-white px-6 py-2.5 rounded-lg font-medium hover:scale-105 transition duration-300'
-                    >
-                        View More
-                    </button>
-                )}
-            </div>
-
-            {productsData.map((item, index) => item.type === 1 ?
-                <ProductsCom1 key={index} ProductsCardImg={item.image} Heading={item.heading} Text={item.text} /> :
-                <ProductsCom2 key={index} ProductsCardImg={item.image} Heading={item.heading} Text={item.text} />)}
-
-            <FooterTop />
-            <Footer />
 
 
         </>

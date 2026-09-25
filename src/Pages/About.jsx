@@ -10,7 +10,7 @@ import FooterTop from "../Components/FooterTop";
 import Footer from "../Components/Footer";
 import NagendraImg from "../images/Clientimg.jpeg";
 
-import CompanyProfile from "../Documents/CPA-MBA-FIN, NAGENDRA SINGH-GCFO.pdf";
+import CV from "../Documents/CPA-MBA-FIN, NAGENDRA SINGH-GCFO (CV).pdf";
 import CompanyCertificate from "../Documents/DOC-20260903-WA0009.pdf";
 import RegistrationDocument from "../Documents/RUN LLP_Name Approval Letter.pdf";
 
@@ -69,13 +69,28 @@ const About = () => {
                 Leadership
               </p>
 
-              <h2
-                className="text-3xl sm:text-4xl font-bold text-[var(--red-primary)] leading-tight mb-5 sm:mb-6"
+              <div className="flex gap-15">
+                <h2
+                  className="text-3xl sm:text-4xl font-bold text-[var(--red-primary)] leading-tight mb-3 sm:mb-4"
+                  data-aos="fade-right"
+                >
+                  Meet Our Leadership
+                </h2>
+                <a
+                  href={CV}
+                  download
+                  className="inline-flex items-center gap-2 h-11 bg-[var(--red-primary)] text-white px-3 py-1 rounded-md text-sm leading-none font-semibold hover:opacity-90 transition-all duration-300"
+                >
+                  Download CV
+                </a>
+              </div>
+
+              <h3
+                className="text-xl sm:text-2xl font-semibold text-[#2A3855] mb-4"
                 data-aos="fade-right"
               >
-                Meet Our Leadership
-              </h2>
-
+                Mr. Nagendra Singh
+              </h3>
               <div
                 className="space-y-4 text-gray-600 leading-7 text-[15px] sm:text-base"
                 data-aos="fade-right"
@@ -185,22 +200,6 @@ const About = () => {
 
                     <div className="space-y-3">
 
-                      {/* COMPANY PROFILE */}
-                      <a
-                        href={CompanyProfile}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3 w-full p-3 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition"
-                      >
-                        <span className="font-medium text-gray-700 text-sm sm:text-base break-words">
-                          Company Profile
-                        </span>
-
-                        <span className="text-[var(--red-primary)] font-semibold text-xs sm:text-sm whitespace-nowrap">
-                          View PDF →
-                        </span>
-                      </a>
-
                       {/* COMPANY CERTIFICATE */}
                       <a
                         href={CompanyCertificate}
@@ -241,6 +240,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+
       <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -266,7 +267,7 @@ const About = () => {
               data-aos="fade-left"
             >
               <span className="inline-block text-sm font-semibold tracking-wider uppercase text-[#9E012E] mb-3">
-                About Nk Global Export
+                About NK GLOBAL EXPORT SOURCING LLP
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold leading-tight text-gray-900">
@@ -276,8 +277,8 @@ const About = () => {
               </h2>
 
               <p className="mt-5 text-[15px] sm:text-base leading-7 text-gray-600">
-                Nk Global is a leading wholesale poultry supplier in India,
-                established in 2018. We specialize in supplying high-quality
+                NK GLOBAL EXPORT SOURCING LLP is a leading wholesale poultry supplier in India,
+                established. We specialize in supplying high-quality
                 poultry, mutton, seafood to businesses across the country.
               </p>
 
@@ -398,7 +399,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= MISSION / VISION ================= */}
       <section className="w-full bg-white">
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
 
@@ -445,7 +445,7 @@ const About = () => {
                     </h3>
 
                     <p className="mt-2 text-sm sm:text-[15px] leading-7 text-gray-600">
-                      Nk Global is dedicated to providing exceptional
+                      NK GLOBAL EXPORT SOURCING LLP is dedicated to providing exceptional
                       meat products as a leading global supplier. We maintain
                       high standards in sourcing, processing, and distribution
                       while supporting sustainability, hygiene, and customer

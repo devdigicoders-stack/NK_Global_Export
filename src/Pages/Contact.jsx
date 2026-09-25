@@ -18,7 +18,7 @@ const Contact = () => {
                         </p>
 
                         <h1 className="text-2xl sm:text-4xl md:text-5xl font-semibold text-gray-900">
-                            Contact Ettemad Agro
+                            NK GLOBAL EXPORT SOURCING LLP
                         </h1>
 
                         <p className="max-w-[700px] mx-auto mt-4 text-xs sm:text-sm md:text-base text-gray-600 leading-6 sm:leading-7">
@@ -242,11 +242,12 @@ const Contact = () => {
                     <div className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[450px] mt-6 sm:mt-8 rounded-[25px] overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
 
                         <iframe
-                            src="https://www.google.com/maps?q=417%20ITO%2C%20IP%20Estate%2C%20New%20Delhi%20110002&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d28459.8208045059!2d80.9460716!3d26.9200696!3m2!1i1024!2i768!4f13.1!2m1!1sPlot%20No%2037%20Gata%20No%20174%20Madiyaon%20Jankipuram%20Ext%20Lucknow%20Uttar%20Pradesh%20226031!5e0!3m2!1sen!2sin!4v1790251018322!5m2!1sen!2sin"
                             className="w-full h-full border-0"
                             loading="lazy"
                             title="Ettemad Agro Location"
                         ></iframe>
+                        
 
                     </div>
 

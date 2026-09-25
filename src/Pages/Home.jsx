@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import useEmblaCarousel from 'embla-carousel-react'
 import Image1 from '../images/HomeSalider2.png'
 import Image2 from '../images/HomeSalider.png'
-import Image3 from '../images/HomeSalider-3.png'
+import Image3 from '../images/HomeSalider3.png'
 import HomeAbout3 from '../images/HomeAbout.png'
 import Chiken from '../images/chiken1.jpeg'
 import CardChiken from '../images/CardChiken.webp'
@@ -114,26 +114,19 @@ const Home = () => {
                         </p>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-5 text-center lg:text-left text-[var(--text-primary)]">
-                            About <span className="text-[var(--red-primary)]">Nk Global Export</span>
+                            About <span className="text-[var(--red-primary)]">NK GLOBAL EXPORT SOURCING LLP</span>
                         </h2>
 
                         <p className="text-base sm:text-lg font-medium leading-7 text-[var(--text-primary)] mb-5 text-center lg:text-left">
                             From farm to your table – Fresh, Healthy & Delicious.
                         </p>
                         <div className="space-y-4 text-[14px] sm:text-[15px] md:text-[16px] leading-7 text-[var(--text-primary)] text-justify">
-                            <p>
-                                Nk Global is a leading <strong>Wholesale Poultry Supplier India</strong>,
-                                trusted for delivering premium poultry, mutton, seafood to
-                                businesses nationwide. Our name, <strong>“Ettemad,”</strong> stands for
-                                trust, which defines our values and service standards.
-                            </p>
-
-                            <p className="hidden sm:block">
-                                We specialize in B2B supply and maintain strict consistency in quality.
-                                As a professional <strong>Wholesale Poultry Supplier India</strong>, our
-                                commitment is to reliability, hygiene, and fulfilling bulk requirements
-                                with excellence.
-                            </p>
+                            NK GLOBAL EXPORT SOURCING LLP is a trusted <strong>Wholesale Poultry Supplier India</strong>,
+                            offering premium poultry, mutton, and seafood products
+                            to businesses across India. <strong>NK GLOBAL EXPORT SOURCING LLP</strong>
+                            {" "}is committed to delivering quality products, reliable supply,
+                            and professional service while building strong and lasting
+                            partnerships with our customers.
                         </div>
 
                         {/* Features */}
@@ -337,7 +330,7 @@ const Home = () => {
                             </div>
 
                             <p className="text-gray-500 text-[14px] sm:text-[15px] md:text-base leading-7 -mt-6 sm:-mt-8 text-justify">
-                                Nk Global is actually complementing their brand name i.e. TRUST.
+                                NK GLOBAL EXPORT SOURCING LLP is actually complementing their brand name i.e. TRUST.
                                 As per my experience, this is one of the most trusted, highly
                                 qualitative, affordable and fastly growing brands. Their products
                                 are very hygienic, highly standardized and neatly packed. As

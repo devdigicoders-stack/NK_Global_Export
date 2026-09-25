@@ -21,7 +21,7 @@ const FooterTop = () => {
                     </h2>
 
                     <p className="mt-4 text-sm sm:text-base md:text-[18px] leading-6">
-                        Nk Global is a leading meat supply company specializing in the
+                        NK GLOBAL EXPORT SOURCING LLP is a leading meat supply company specializing in the
                     </p>
 
                     <p className="mt-1 text-sm sm:text-base md:text-[18px] leading-6">

@@ -28,82 +28,107 @@ const Clinets = () => {
     ];
     return (
         <>
+            <div className="w-full overflow-x-hidden">
 
-            <Header />
-            <div className="relative w-full h-[200px] overflow-hidden mt-20">
+                <Header />
 
-                {/* Background Image */}
-                <img
-                    src={AboutBg}
-                    alt="About Us"
-                    className="absolute inset-0 w-full h-full object-cover"
-                />
+                <div className="relative w-full h-[200px] overflow-hidden mt-20">
+                    <img
+                        src={AboutBg}
+                        alt="About Us"
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/70"></div>
+                    <div className="absolute inset-0 bg-black/70"></div>
 
-                {/* About Us */}
-                <div className="relative z-10 h-full flex items-center justify-center">
-                    <h1 className="text-white text-3xl sm:text-4xl font-bold">
-                        Clients
-                    </h1>
+                    <div className="relative z-10 h-full flex items-center justify-center px-4">
+                        <h1 className="text-white text-3xl sm:text-4xl font-bold text-center">
+                            Clients
+                        </h1>
+                    </div>
                 </div>
 
-            </div>
+                <div className="w-full overflow-hidden px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+                    <div className="w-full max-w-[1050px] mx-auto">
 
+                        <div className="text-center">
 
-            <div className="w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
-                <div className="w-full max-w-[1050px] mx-auto">
+                            <span className="inline-block text-[var(--red-primary)] text-xs sm:text-sm font-semibold uppercase tracking-[2px] mb-3">
+                                NK GLOBAL EXPORT SOURCING LLP
+                            </span>
 
-                    {/* Main Content */}
-                    <div className="text-center">
-                        <span className="inline-block text-[var(--red-primary)] text-xs sm:text-sm font-semibold uppercase tracking-[2px] mb-3">
-                            Nk Global  Export
-                        </span>
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-5 sm:mb-6">
+                                Leading B2B Meat Supplier for{" "}
+                                <span className="text-[var(--red-primary)]">
+                                    Global & Local Industries
+                                </span>
+                            </h2>
 
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-5 sm:mb-6">
-                            Leading B2B Meat Supplier for
-                            <span className="text-[var(--red-primary)]"> Global & Local Industries</span>
-                        </h2>
+                            <p className="text-sm sm:text-base md:text-[16px] text-gray-600 leading-7 sm:leading-8 max-w-[950px] mx-auto">
+                                <strong className="text-gray-900">
+                                    NK GLOBAL EXPORT SOURCING LLP
+                                </strong>{" "}
+                                is a{" "}
+                                <strong className="text-gray-900">
+                                    Leading B2B meat supplier
+                                </strong>{" "}
+                                for Global & Local Industries, dedicated to bridging the gap between
+                                farm-fresh quality and large-scale industrial requirements. We
+                                specialize in providing a consistent,{" "}
+                                <strong className="text-[var(--red-primary)] underline underline-offset-4">
+                                    halal-certified
+                                </strong>
+                                , and highly regulated supply of poultry, mutton, seafood.
+                                As a trusted{" "}
+                                <strong className="text-gray-900">
+                                    B2B meat supplier in India
+                                </strong>
+                                , we understand that procurement managers and business owners require
+                                more than just a vendor—they require a strategic partner who ensures
+                                food safety, timely logistics, and premium grading.
+                            </p>
 
-                        <p className="text-sm sm:text-base md:text-[16px] text-gray-600 leading-7 sm:leading-8 max-w-[950px] mx-auto">
-                            <strong className="text-gray-900">Nk Global Export</strong> is a{" "}
-                            <strong className="text-gray-900">Leading B2B meat supplier</strong>{" "}
-                            for Global & Local Industries, dedicated to bridging the gap between
-                            farm-fresh quality and large-scale industrial requirements. We
-                            specialize in providing a consistent,{" "}
-                            <strong className="text-[var(--red-primary)] underline underline-offset-4">
-                                halal-certified
-                            </strong>
-                            , and highly regulated supply of poultry, mutton, seafood.
-                            As a trusted{" "}
-                            <strong className="text-gray-900">
-                                B2B meat supplier in India
-                            </strong>
-                            , we understand that procurement managers and business owners require
-                            more than just a vendor—they require a strategic partner who ensures
-                            food safety, timely logistics, and premium grading.
-                        </p>
+                        </div>
+
+                        <div className="flex items-center gap-3 sm:gap-4 mt-14 sm:mt-16 lg:mt-20">
+
+                            <div className="h-[1px] flex-1 bg-gray-200"></div>
+
+                            <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-gray-900 text-center whitespace-nowrap">
+                                Industries We Serve
+                            </h2>
+
+                            <div className="h-[1px] flex-1 bg-gray-200"></div>
+
+                        </div>
+
                     </div>
-
-                    {/* Industries Heading */}
-                    <div className="flex items-center gap-4 mt-14 sm:mt-16 lg:mt-20">
-                        <div className="h-[1px] flex-1 bg-gray-200"></div>
-
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center whitespace-nowrap">
-                            Industries We Serve
-                        </h2>
-
-                        <div className="h-[1px] flex-1 bg-gray-200"></div>
-                    </div>
-
                 </div>
+
+                <div className="w-full overflow-hidden">
+                    {clientsData.map((item, index) =>
+                        item.type === 1 ? (
+                            <ClinentsCard1
+                                key={index}
+                                Clinentsimage={item.image}
+                                Heading={item.heading}
+                                Text={item.text}
+                            />
+                        ) : (
+                            <ClinentsCard2
+                                key={index}
+                                clientsimage={item.image}
+                                Heading={item.heading}
+                                text={item.text}
+                            />
+                        )
+                    )}
+                </div>
+
+                <FooterTop />
+                <Footer />
+
             </div>
-            {clientsData.map((item, index) => item.type === 1 ?
-                <ClinentsCard1 key={index} Clinentsimage={item.image} Heading={item.heading} Text={item.text} /> :
-                <ClinentsCard2 key={index} clientsimage={item.image} Heading={item.heading} text={item.text} />)}
-            <FooterTop />
-            <Footer />
         </>
     )
 }
