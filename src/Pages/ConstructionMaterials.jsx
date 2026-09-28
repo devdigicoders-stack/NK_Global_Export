@@ -3,15 +3,29 @@ import FooterTop from '../Components/FooterTop';
 import Footer from '../Components/Footer';
 
 import Cement from '../images/Cement & Concrete.jpg'
+import Faucet from '../images/Faucet.jpg'
 import Steel from '../images/Steel & TMT.jpg'
 import Bricks from '../images/Bricks & Blocks.jpg'
 import Sand from '../images/Sand & Aggregates.jpg'
 import Pipes from '../images/Pipes & Fitting.jpg'
+import Tiles from '../images/Tiles.jpg'
 import Hardware from '../images/Hardware & Tools.avif'
 
 const ConstructionMaterials = () => {
 
   const constructionCategories = [
+    {
+      title: "Faucet",
+      products: "20 Products",
+      description: "Premium faucets and fittings for modern kitchens and bathrooms.",
+      image: Faucet,
+    },
+    {
+      title: "TILES",
+      products: "20 Products",
+      description: "Premium quality tiles for modern homes and commercial spaces.",
+      image: Tiles,
+    },
     {
       title: "Cement & Concrete",
       products: "15 Products",
@@ -103,11 +117,6 @@ const ConstructionMaterials = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
 
                   <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-5">
-
-                    <span className="text-white text-xs sm:text-sm font-medium">
-                      {item.products}
-                    </span>
-
                   </div>
 
                 </div>

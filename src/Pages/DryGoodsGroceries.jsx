@@ -83,8 +83,6 @@ const DryGoodsGroceries = () => {
                 className="group w-full overflow-hidden rounded-xl sm:rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-xl transition-all duration-300"
               >
 
-                {/* Image */}
-
                 <div className="w-full h-[150px] sm:h-[250px] overflow-hidden bg-gray-100">
 
                   <img
@@ -95,18 +93,11 @@ const DryGoodsGroceries = () => {
 
                 </div>
 
-
-                {/* Content */}
-
                 <div className="p-3 sm:p-6">
 
                   <h3 className="text-sm sm:text-xl font-bold text-gray-900">
                     {item.title}
                   </h3>
-
-                  <p className="mt-1 text-xs sm:text-sm text-gray-500">
-                    {item.products}
-                  </p>
 
                   <button
                     className="mt-3 sm:mt-4 inline-flex items-center text-xs sm:text-sm font-semibold text-[var(--bg-primary)]"
@@ -116,19 +107,12 @@ const DryGoodsGroceries = () => {
                     <span className="ml-1 sm:ml-2 transition-transform duration-300 group-hover:translate-x-1">
                       →
                     </span>
-
                   </button>
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
       {/* <FooterTop /> */}
       <Footer />

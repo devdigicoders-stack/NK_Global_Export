@@ -38,25 +38,21 @@ const FruitsVegetables = () => {
     {
       id: 1,
       name: "Tomato",
-      price: 40,
       image: Tomato,
     },
     {
       id: 2,
       name: "Potato",
-      price: 30,
       image: Potato,
     },
     {
       id: 3,
       name: "Onion",
-      price: 35,
       image: Onion,
     },
     {
       id: 4,
       name: "Carrot",
-      price: 50,
       image: Carrot,
     },
   ];
@@ -65,49 +61,41 @@ const FruitsVegetables = () => {
     {
       id: 5,
       name: "Cabbage",
-      price: 40,
       image: Cabbage,
     },
     {
       id: 6,
       name: "Cauliflower",
-      price: 50,
       image: Cauliflower,
     },
     {
       id: 7,
       name: "Spinach",
-      price: 30,
       image: Spinach,
     },
     {
       id: 8,
       name: "Capsicum",
-      price: 80,
       image: Capsicum,
     },
     {
       id: 9,
       name: "Brinjal",
-      price: 45,
       image: Brinjal,
     },
     {
       id: 10,
       name: "Lady Finger",
-      price: 60,
       image: LadyFinger,
     },
     {
       id: 11,
       name: "Green Peas",
-      price: 100,
       image: GreenPeas,
     },
     {
       id: 12,
       name: "Cucumber",
-      price: 40,
       image: Cucumber,
     },
   ];
@@ -115,25 +103,21 @@ const FruitsVegetables = () => {
     {
       id: 1,
       name: "Apple",
-      price: 120,
       image: Apple,
     },
     {
       id: 2,
       name: "Pineapple",
-      price: 60,
       image: Pineapple,
     },
     {
       id: 3,
       name: "Orange",
-      price: 80,
       image: Orange,
     },
     {
       id: 4,
       name: "Mango",
-      price: 100,
       image: Mango,
     },
   ];
